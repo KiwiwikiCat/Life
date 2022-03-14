@@ -1,0 +1,16 @@
+"""
+Download zip files(poppler-0.68.0)
+https://blog.alivate.com.au/poppler-windows/
+added to path=> C:\Program Files (x86)
+C:\Program Files (x86)\poppler-0.68.0\
+    bin
+    include
+    lib
+    share
+"""
+
+from pdf2image import convert_from_path
+pages = convert_from_path(r'filespath.PDF', 500, poppler_path = r'C:\Program Files (x86)\poppler-0.68.0\bin')
+
+for i in range(len(pages)):
+    pages[i].save('page'+str(i)+'.jpg','JPEG')
