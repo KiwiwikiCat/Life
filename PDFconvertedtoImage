@@ -1,4 +1,5 @@
 """
+怎樣用Python將PDF檔轉成圖片檔
 Download zip files(poppler-0.68.0)
 https://blog.alivate.com.au/poppler-windows/
 added to path=> C:\Program Files (x86)
